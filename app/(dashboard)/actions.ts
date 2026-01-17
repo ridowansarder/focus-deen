@@ -4,7 +4,6 @@ import prisma from "@/lib/prisma";
 import { dailyLogSchema } from "@/lib/validators/dailyLog";
 import { getOrCreateUser } from "@/lib/getOrCreateUser";
 import { revalidatePath } from "next/cache";
-import { Prisma } from "@/lib/generated/prisma/client";
 import { redirect } from "next/navigation";
 
 export async function createDailyLog(formData: FormData) {
@@ -44,17 +43,6 @@ export async function createDailyLog(formData: FormData) {
     return { success: true };
   } catch (error) {
     console.error("Error creating daily log:", error);
-
-    if (
-      error instanceof Prisma.PrismaClientKnownRequestError &&
-      error.code === "P2002"
-    ) {
-      return {
-        success: false,
-        error: "You already have a log for this date.",
-      };
-    }
-
     return { success: false, error: "An unexpected error occurred" };
   }
 }
@@ -99,16 +87,6 @@ export async function updateDailyLog(formData: FormData, logId: string) {
     return { success: true };
   } catch (error) {
     console.error("Error updating daily log:", error);
-
-    if (
-      error instanceof Prisma.PrismaClientKnownRequestError &&
-      error.code === "P2002"
-    ) {
-      return {
-        success: false,
-        error: "You already have a log for this date.",
-      };
-    }
     return { success: false, error: "An unexpected error occurred" };
   }
 }
