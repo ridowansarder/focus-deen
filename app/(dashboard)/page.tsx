@@ -71,8 +71,8 @@ export default async function Dashboard() {
 
   const greetings = () => {
     const hour = new Date().getHours();
-    if (hour < 12) return "Good Morning";
-    if (hour < 18) return "Good Afternoon";
+    if (hour >=5 && hour < 12) return "Good Morning";
+    if (hour >= 12 && hour < 18) return "Good Afternoon";
     return "Good Evening";
   };
 
