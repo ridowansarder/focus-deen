@@ -69,17 +69,10 @@ export default async function Dashboard() {
     (monthlyHours._sum.studyHours || 0) +
     (monthlyHours._sum.programmingHours || 0);
 
-  const greetings = () => {
-    const hour = new Date().getHours();
-    if (hour >=5 && hour < 12) return "Good Morning";
-    if (hour >= 12 && hour < 18) return "Good Afternoon";
-    return "Good Evening";
-  };
-
   return (
     <div className="max-w-5xl mx-auto py-10 px-6 space-y-8">
       <h1 className="text-2xl font-bold">
-        {greetings()}, {user.name?.split(" ")[0]}!
+        Glad to see you, {user.name?.split(" ")[0]}!
       </h1>
 
       <Separator />
