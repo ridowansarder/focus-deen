@@ -1,36 +1,147 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Focus Deen
 
-## Getting Started
+A **personal productivity & habit tracking system** built with **Next.js App Router**, designed to track daily study, programming, and religious habits (Namaz, Quran) with powerful weekly and monthly insights.
 
-First, run the development server:
+This project was built as:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+* ✅ **Portfolio project** (to demonstrate full‑stack skills)
+* ✅ **Freelancing-ready system** (real-world CRUD + dashboards)
+* ✅ **Personal habit system** (used for real self‑tracking)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✨ Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📅 Daily Logs
 
-## Learn More
+* Add daily logs with:
 
-To learn more about Next.js, take a look at the following resources:
+  * Study hours
+  * Programming hours
+  * Namaz completion (0–5)
+  * Quran reading status
+* Edit & delete logs
+* Dedicated **Daily Log Details page**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 📊 Weekly Dashboard
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* Automatic week range calculation
+* Weekly stats:
 
-## Deploy on Vercel
+  * Total logs
+  * Study hours
+  * Programming hours
+  * Total productive hours
+  * Perfect days (5/5 Namaz)
+  * Namaz completion percentage
+* Click any day to view full details
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 🗓️ Monthly Dashboard
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* Monthly overview of all logs
+* Aggregated statistics for the entire month
+* Clean, card-based layout for readability
+
+### 🔐 Authentication
+
+* Secure authentication using **Clerk**
+* User‑specific data isolation
+
+### 🧠 Smart UX Decisions
+
+* Editable dates (not forced read‑only)
+* Confirmation dialogs before delete
+* Empty state handling
+* Consistent UI across pages
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* **Next.js 14 (App Router)**
+* **React**
+* **Tailwind CSS**
+* **shadcn/ui**
+* **Lucide Icons**
+
+### Backend
+
+* **Next.js Server Actions**
+* **Prisma ORM**
+* **PostgreSQL (Neon)**
+* **Prisma Adapter (pg)**
+
+### Auth & Infra
+
+* **Clerk Authentication**
+* **Vercel Deployment**
+* **pnpm**
+
+---
+
+## 📂 Key Pages
+
+* `/` → Dashboard
+* `/weekly` → Weekly overview
+* `/monthly` → Monthly overview
+* `/[logId]` → Daily log details (update & delete)
+
+---
+
+## 🧩 Database Models (Simplified)
+
+* **User**
+* **DailyLog**
+
+  * date
+  * studyHours
+  * programmingHours
+  * namazCompleted
+  * quranRead
+
+---
+
+## 🚀 Deployment
+
+The project is deployed on **Vercel** with:
+
+* Environment‑based Prisma setup
+* Production‑safe database connection handling
+* Successful production builds after resolving Prisma + Turbopack issues
+
+---
+
+## 🎯 What This Project Demonstrates
+
+* End‑to‑end full‑stack development
+* Real production debugging & deployment
+* Clean data modeling & aggregation
+* Dashboard‑driven UX
+* Scalable project structure
+
+This is **V1** of the project and intentionally kept focused. No unnecessary features were added beyond the core value.
+
+---
+
+## 📌 Future Ideas (Optional, Not Implemented)
+
+* Charts & visual analytics
+* Streak tracking
+* Data export
+* Mobile‑first refinements
+
+---
+
+## 👤 Author
+
+**Ridwan**
+Full‑stack Next.js & MERN Developer
+University of Dhaka
+
+---
+
+## 📝 License
+
+This project is for learning, portfolio, and personal use.
