@@ -84,8 +84,8 @@ export default async function DailyLogDetailsPage({
 
         <StatCard
           icon={CodeIcon}
-          title="Programming Hours"
-          description="Time spent coding"
+          title="Programming/Working Hours"
+          description="Time spent working"
           value={`${log.programmingHours}h`}
         />
 
