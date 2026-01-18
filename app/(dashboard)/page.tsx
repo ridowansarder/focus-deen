@@ -33,6 +33,7 @@ import {
 import Link from "next/link";
 import { UpdateDayLogDialog } from "@/components/UpdateDayLogDialog";
 import { Button } from "@/components/ui/button";
+import { ConfirmDeleteLogButton } from "@/components/ConfirmDeleteLogButton";
 
 export default async function Dashboard() {
   const user = await getOrCreateUser();
@@ -85,7 +86,10 @@ export default async function Dashboard() {
           </h2>
 
           {todayLog ? (
-            <UpdateDayLogDialog logId={todayLog.id} todayLog={todayLog} />
+            <div className="flex gap-4 items-center">
+              <UpdateDayLogDialog logId={todayLog.id} todayLog={todayLog} />
+              <ConfirmDeleteLogButton logId={todayLog?.id || ""} />
+            </div>
           ) : (
             <AddDayLogDialog />
           )}

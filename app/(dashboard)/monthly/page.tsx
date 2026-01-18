@@ -180,8 +180,8 @@ export default async function MonthlyPage() {
         <StatCard
           icon={BookOpenIcon}
           title="Quran Read"
-          description="Days Quran was read"
-          value={`${quranReadThisMonth}/${totalLogs}`}
+          description="Days Quran was read this month"
+          value={`${quranReadThisMonth}`}
         />
       </div>
 

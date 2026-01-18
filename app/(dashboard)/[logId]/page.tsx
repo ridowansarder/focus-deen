@@ -30,13 +30,14 @@ import { ConfirmDeleteLogButton } from "@/components/ConfirmDeleteLogButton";
 export default async function DailyLogDetailsPage({
   params,
 }: {
-  params: { logId: string };
+  params: Promise<{ logId: string }>;
 }) {
+  const { logId } = await params;
   const user = await getOrCreateUser();
 
   const log = await prisma.dailyLog.findFirst({
     where: {
-      id: params.logId,
+      id: logId,
       userId: user.clerkUserId,
     },
   });
@@ -115,16 +116,6 @@ export default async function DailyLogDetailsPage({
           description="Did you read the Quran today?"
           value={log.quranRead ? "Yes" : "No"}
         />
-      </div>
-
-      <Separator />
-
-      {/* Timestamp */}
-      <div className="text-xs text-muted-foreground flex flex-col gap-1">
-        <span>• Created at {format(log.createdAt, "dd MMM yyyy, hh:mm a")}</span>
-        <span>
-         • Last updated {format(log.updatedAt, "dd MMM yyyy, hh:mm a")}
-        </span>
       </div>
     </div>
   );

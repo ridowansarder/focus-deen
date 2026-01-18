@@ -167,7 +167,7 @@ export default async function WeeklyPage() {
           icon={BookOpenIcon}
           title="Quran Read"
           description="Quran read this week"
-          value={`${quranReadThisWeek}/7`}
+          value={`${quranReadThisWeek}`}
         />
       </div>
 

@@ -14,7 +14,7 @@ const Navbar = async () => {
     <header className="bg-background/80 border-b sticky top-0 z-50 backdrop-blur">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <Link href="/" className="text-xl font-bold">
+          <Link href="/" className="text-2xl font-bold">
             FocusDeen
           </Link>
 
