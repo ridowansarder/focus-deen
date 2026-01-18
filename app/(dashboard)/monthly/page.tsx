@@ -131,8 +131,8 @@ export default async function MonthlyPage() {
         />
         <StatCard
           icon={CodeIcon}
-          title="Programming Hours"
-          description="Total coding hours this month"
+          title="Programming/Working Hours"
+          description="Total working hours this month"
           value={totalProgrammingHoursThisMonth}
         />
         <StatCard
@@ -144,19 +144,19 @@ export default async function MonthlyPage() {
         <StatCard
           icon={EqualIcon}
           title="Average Study Hours"
-          description="Average study hours per logged day"
+          description="Average study hours this month"
           value={averageStudyHoursThisMonth}
         />
         <StatCard
           icon={EqualIcon}
-          title="Average Programming Hours"
-          description="Average coding hours per logged day"
+          title="Average Programming/Working Hours"
+          description="Average working hours this month"
           value={averageProgrammingHoursThisMonth}
         />
         <StatCard
           icon={EqualIcon}
           title="Average Productive Hours"
-          description="Average productive hours per logged day"
+          description="Average productive hours this month"
           value={averageProductiveHoursThisMonth}
         />
         <StatCard

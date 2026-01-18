@@ -117,8 +117,8 @@ export default async function WeeklyPage() {
         />
         <StatCard
           icon={CodeIcon}
-          title="Programming Hours"
-          description="Total coding hours this week"
+          title="Programming/Working Hours"
+          description="Total working hours this week"
           value={totalProgrammingHoursThisWeek || 0}
         />
         <StatCard
@@ -135,8 +135,8 @@ export default async function WeeklyPage() {
         />
         <StatCard
           icon={EqualIcon}
-          title="Average Programming Hours"
-          description="Average coding hours this week"
+          title="Average Programming/Working Hours"
+          description="Average working hours this week"
           value={averageProgrammingHoursThisWeek}
         />
         <StatCard

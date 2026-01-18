@@ -36,6 +36,7 @@ const Navbar = async () => {
           </div>
 
           <div className="flex md:hidden items-center gap-2">
+            <UserButton />
             <ModeToggle />
             <MobileNav navLinks={navLinks} />
           </div>

@@ -105,8 +105,8 @@ export default async function Dashboard() {
             />
             <StatCard
               icon={CodeIcon}
-              title="Programming Hours"
-              description="Hours coded today"
+              title="Programming/Working Hours"
+              description="Hours worked today"
               value={todayLog.programmingHours || 0}
             />
             <StatCard
@@ -172,8 +172,8 @@ export default async function Dashboard() {
           />
           <StatCard
             icon={CodeIcon}
-            title="Programming Hours"
-            description="Total coding hours this week"
+            title="Programming/Working Hours"
+            description="Total working hours this week"
             value={weeklyHours._sum.programmingHours || 0}
           />
           <StatCard
@@ -211,8 +211,8 @@ export default async function Dashboard() {
           />
           <StatCard
             icon={CodeIcon}
-            title="Programming Hours"
-            description="Total coding hours this month"
+            title="Programming/Working Hours"
+            description="Total working hours this month"
             value={monthlyHours._sum.programmingHours || 0}
           />
           <StatCard
