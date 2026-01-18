@@ -2,17 +2,11 @@
 
 A **personal productivity & habit tracking system** built with **Next.js App Router**, designed to track daily study, programming, and religious habits (Namaz, Quran) with powerful weekly and monthly insights.
 
-This project was built as:
-
-* ✅ **Portfolio project** (to demonstrate full‑stack skills)
-* ✅ **Freelancing-ready system** (real-world CRUD + dashboards)
-* ✅ **Personal habit system** (used for real self‑tracking)
-
 ---
 
-## ✨ Features
+## Features
 
-### 📅 Daily Logs
+### Daily Logs
 
 * Add daily logs with:
 
@@ -23,7 +17,7 @@ This project was built as:
 * Edit & delete logs
 * Dedicated **Daily Log Details page**
 
-### 📊 Weekly Dashboard
+### Weekly Dashboard
 
 * Automatic week range calculation
 * Weekly stats:
@@ -36,31 +30,30 @@ This project was built as:
   * Namaz completion percentage
 * Click any day to view full details
 
-### 🗓️ Monthly Dashboard
+### Monthly Dashboard
 
 * Monthly overview of all logs
 * Aggregated statistics for the entire month
 * Clean, card-based layout for readability
 
-### 🔐 Authentication
+### Authentication
 
 * Secure authentication using **Clerk**
 * User‑specific data isolation
 
-### 🧠 Smart UX Decisions
+### UX Decisions
 
-* Editable dates (not forced read‑only)
 * Confirmation dialogs before delete
 * Empty state handling
 * Consistent UI across pages
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 
-* **Next.js 14 (App Router)**
+* **Next.js 16 (App Router)**
 * **React**
 * **Tailwind CSS**
 * **shadcn/ui**
@@ -71,7 +64,6 @@ This project was built as:
 * **Next.js Server Actions**
 * **Prisma ORM**
 * **PostgreSQL (Neon)**
-* **Prisma Adapter (pg)**
 
 ### Auth & Infra
 
@@ -81,7 +73,7 @@ This project was built as:
 
 ---
 
-## 📂 Key Pages
+## Pages
 
 * `/` → Dashboard
 * `/weekly` → Weekly overview
@@ -90,7 +82,7 @@ This project was built as:
 
 ---
 
-## 🧩 Database Models (Simplified)
+## Database Models
 
 * **User**
 * **DailyLog**
@@ -103,7 +95,7 @@ This project was built as:
 
 ---
 
-## 🚀 Deployment
+## Deployment
 
 The project is deployed on **Vercel** with:
 
@@ -113,7 +105,7 @@ The project is deployed on **Vercel** with:
 
 ---
 
-## 🎯 What This Project Demonstrates
+## What This Project Demonstrates
 
 * End‑to‑end full‑stack development
 * Real production debugging & deployment
@@ -125,7 +117,7 @@ This is **V1** of the project and intentionally kept focused. No unnecessary fea
 
 ---
 
-## 📌 Future Ideas (Optional, Not Implemented)
+## Future Ideas
 
 * Charts & visual analytics
 * Streak tracking
@@ -134,14 +126,13 @@ This is **V1** of the project and intentionally kept focused. No unnecessary fea
 
 ---
 
-## 👤 Author
+## Author
 
 **Ridwan**
 Full‑stack Next.js & MERN Developer
-University of Dhaka
 
 ---
 
-## 📝 License
+## License
 
 This project is for learning, portfolio, and personal use.
