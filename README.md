@@ -1,6 +1,11 @@
 # Focus Deen
 
-A **personal productivity & habit tracking system** built with **Next.js App Router**, designed to track daily study, programming, and religious habits (Namaz, Quran) with powerful weekly and monthly insights.
+A **personal productivity & habit tracking system** built with **Next.js App Router**, designed to track daily study, programming, and religious habits (Namaz, Quran) with powerful weekly and monthly [...]
+
+
+## Live Demo
+
+The app is deployed and available at: [Live Demo](https://focus-deen.vercel.app/)
 
 ---
 
